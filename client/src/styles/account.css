@@ -1,0 +1,167 @@
+.account {
+    background-color: #f0f0f0; /* Cambiado a un tono más claro */
+}
+
+#navbar:first-letter {
+    text-transform: capitalize;
+}
+#navbar {
+    text-transform: lowercase;
+}
+
+.login-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.cover {
+    background-color: rgba(0, 0, 0, 0.05); /* Cambiado a un tono más suave */
+    width: 30em;
+    height: 45em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.accountImg {
+    height: 100px;
+    border-radius: 20%;
+    padding: 20px;
+}
+
+.account a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button-group {
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.account input {
+    margin-top: 5px;
+    font-size: 15px;
+    width: 80%;
+    border: 1px solid #1a1a1a; /* Cambiado a un tono de gris oscuro */
+    height: 30px;
+    border-radius: 0.25em;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.account input:focus {
+    outline-color: #000000; /* Cambiado a negro */
+}
+
+.account label {
+    width: 80%;
+    margin-top: 5px;
+    padding: 0;
+    font-size: 18px;
+    color: #1a1a1a; /* Cambiado a un tono de gris oscuro */
+}
+
+.account p {
+    text-align: left;
+    width: 80%;
+    margin: 0px;
+    color: #000000; /* Cambiado a negro */
+    font-size: 13px;
+}
+
+.account ::placeholder {
+    color: #1a1a1a; /* Cambiado a un tono de gris oscuro */
+    opacity: 25%;
+}
+
+.button-text {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: #1a1a1a; /* Cambiado a un tono de gris oscuro */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+     .cover {
+        width: 100vw;
+        height: 120vh;
+        border-radius: 0px;
+        box-shadow: 0 0 0 0;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 897px) and (orientation: landscape) {
+
+    .cover {
+        margin-top: 30px;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        box-shadow: 0 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cover input {
+        width: 50%;
+    }
+
+    .cover label {
+        width: 50%;
+    }
+
+    .button-group {
+        margin-top: 20px;
+        margin-bottom: 0;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+    }
+
+    .createAccountCover {
+        height: 200vh;
+    }
+
+    .loginCover {
+        height: 130vh;
+        display: flex;
+        padding-top: 50px;
+    }
+
+    .cover {
+        background-image: url('../images/2.png'); /* Reemplaza 'url_de_tu_imagen.jpg' con la URL de tu imagen */
+        background-repeat: no-repeat;
+        background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+        background-position: center; /* Centra la imagen */
+        width: 30em;
+        height: 45em;
+        position: relative;
+        border-radius: 1em;
+        box-shadow: 0 0.188em 1.550em rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+}
+

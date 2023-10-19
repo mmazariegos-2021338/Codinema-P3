@@ -1,0 +1,9 @@
+@import "styles/main.css";
+@import "styles/header.css";
+@import "styles/footer.css";
+@import "styles/home.css";
+@import "styles/movies.css";
+@import "styles/tickets.css";
+@import "styles/movie-filter-menu.css";
+@import "styles/movie-card.css";
+@import "styles/calendar-card.css";

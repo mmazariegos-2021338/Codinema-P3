@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Niconne&family=Nosifer&family=Poppins:wght@200&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.waviy {
+  position: relative;
+  width: 120%;
+  padding-left: 30px;
+}
+.waviy span {
+  font-family: 'Niconne', cursive;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  color: #1a1a1a;
+  animation: flip 12s infinite;
+  animation-delay: calc(.08s * var(--i));
+}
+
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
+
+header {
+  background-color: #1a1a1a;
+  position: fixed;
+  width: 100%;
+  height: 2.7rem;
+  z-index: 999;
+  animation: 1.5s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.45rem 3.5vw;
+  font-weight: 600;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  padding-top: 12px;
+}
+
+#navbar:focus,
+#navbar:hover {
+  color: #fff;
+}
+
+#navbar:focus:after,
+#navbar:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+#navbar:after {
+  content: "";
+  pointer-events: none;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+}
+
+.dropdown-menu a {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+  padding: var(--dropdown_padding);
+}
+
+.dropdown-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #1a1a1a;
+  text-align: center;
+  z-index: 999;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+aside {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  aside {
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 897px) and (orientation: landscape) {
+  aside {
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle, #A6A0A0 10%, transparent 40%), radial-gradient(circle, #A6A0A0 10%, transparent 40%);
+  background-position: 30px 30px, 70px 70px;
+  background-size: 60px 60px;
+  background-color: #f0f0f0;
+}

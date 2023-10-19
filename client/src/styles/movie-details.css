@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+.movie-details-page {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-color: #111111; /* Agregado color de fondo */
+}
+
+.movie-details-page h2 {
+    font-size: 2.5rem;
+    font-family: Questrial;
+    color: white;
+    text-align: center; /* Añadido centrado de texto */
+}
+
+.content-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Questrial;
+    background-color: #111111AA;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    width: 80vw;
+    padding: 20px; /* Añadido espacio interior */
+    box-sizing: border-box; /* Añadido para incluir padding en el ancho */
+}
+
+.date-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.284);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 90%; /* Cambiado ancho */
+    max-width: 600px; /* Añadido ancho máximo */
+}
+
+.movie-text{
+    max-width: 600px;
+    font-size: 20px;
+    margin-bottom: 5vh;
+    text-align: center; /* Añadido centrado de texto */
+}
+
+.movie-info {
+    width: 80%;
+    text-align: center;
+}
+
+#detail-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    align-items: center;
+}
+
+.movie-details-page li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; /* Añadido centrado de texto */
+}
+
+.movie-details-page ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.date-picker {
+    min-width: 100px;
+    text-align: center; /* Añadido centrado de texto */
+}
+
+iframe {
+    width: 40vw;
+    height: 420px;
+    margin-bottom: 20px; /* Añadido espacio inferior */
+}
+
+@media screen and (max-width: 750px) {
+    iframe {
+        width: 300px;
+        height: 220px;
+    }
+
+    .movie-text {
+        font-size: 16px;
+        padding: 10px;
+        width: 300px;
+        text-align: center; /* Añadido centrado de texto */
+    }
+
+    .ticket-form h3 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 950px) and (orientation: landscape) {
+    iframe {
+        width: 500px;
+        height: 220px;
+    }
+
+    .movie-text {
+        font-size: 16px;
+        padding: 10px;
+        width: 500px;
+        text-align: center; /* Añadido centrado de texto */
+    }
+
+    .date-form {
+        justify-content: center;
+     }
+}

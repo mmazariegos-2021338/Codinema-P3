@@ -1,0 +1,18 @@
+
+.error h2 {
+    color: #FF6F61; /* Cambiado a un tono de rojo anaranjado */
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px; /* Tamaño ajustado */
+}
+
+.error {
+    font-family: 'Lacquer', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px; /* Tamaño ajustado */
+    padding: 1rem;
+    background-color: #1a1a1a; /* Cambiado a un tono de gris oscuro */
+    color: #FF6F61; /* Cambiado a un tono de rojo anaranjado */
+}

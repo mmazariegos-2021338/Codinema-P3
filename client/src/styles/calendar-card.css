@@ -1,0 +1,118 @@
+.calendar-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    transition: 1s;
+    background-color: #F0F0F0; /* Cambiado a un tono más claro */
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(255, 255, 255);
+}
+
+.calendar-card img {
+    width: 200px;
+    height: 230px;
+    border-right: 0;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-card h3 {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif; /* Cambiado a una fuente más moderna */
+    font-weight: 600;
+    color: #1a1a1a; /* Cambiado a un tono de gris oscuro */
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0;
+}
+
+.calendar-card h4 {
+    color: #8B95A6; /* Cambiado a un tono de gris azulado */
+    font-size: 18px;
+    margin: 8px;
+    padding: 0;
+}
+
+.calendar-card p {
+    color: #1a1a1a; /* Cambiado a un tono de gris oscuro */
+    font-weight: 200;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-card ul {
+    color: #1a1a1a; /* Cambiado a un tono de gris oscuro */
+    text-align: left;
+    list-style: none;
+    height: 100%;
+    width: 160px;
+    font-family: 'Poppins', sans-serif; /* Cambiado a una fuente más moderna */
+    padding-left: 0;
+}
+
+.calendar-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.calendar-card-label {
+    background: linear-gradient(20deg, rgba(2, 0, 36, 1) 0%, rgba(112, 33, 33, 1) 100%, rgba(11, 4, 4, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    border: none;
+    border-left: 0;
+    width: 200px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+@media screen and (max-width: 680px) {
+    .calendar-card {
+        width: 340px;
+    }
+
+    .calendar-card h3 {
+        text-align: center;
+        width: 240px;
+    }
+
+    .calendar-card ul {
+        list-style: none;
+        width: 155px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calendar-card li {
+        padding: 2px;
+    }
+
+    .calendar-card img {
+        position: absolute;
+        width: 310px;
+        height: 400px;
+        opacity: 0.3;
+    }
+
+    .calendar-card-label {
+        width: 270px;
+        height: 400px;
+        background: #000; /* Cambiado a negro */
+    }
+
+    #calender-box button {
+        padding: 12px 15px;
+    }
+
+    .selectedDate {
+        padding: 10px;
+    }
+}
